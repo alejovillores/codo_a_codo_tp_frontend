@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    gap: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* nav styles */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #353a40;
+}
+.logo img {
+    width: 80px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    color: azure;
+    font-size: 20px;
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 1em;
+}
+.pages a {
+    color: #a4a4a4; 
+    text-decoration: none;
+    display: flex;
+}
+
+.actual {
+    color: azure !important;
+}
+
+#tickets {
+    color: #2aa743;
+}
+#tickets:hover {
+    color: #33cb52;
+}
+
+/* main styles */
+.main{
+    background-image: url("../imgs/ba1.jpg");
+    
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
