@@ -233,6 +233,7 @@
     border-radius: 2px;
     outline: none !important;
     border:1px solid #a8a8a8;
+    resize: none;
 }
 
 .focus:focus {
