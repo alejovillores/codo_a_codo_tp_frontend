@@ -269,3 +269,104 @@
     color: #ffffff;
     font-size: small;
 }
+
+@media only screen and (max-width: 650px){
+    .container {
+        max-width: 650px;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #353a40;
+        max-width: 650px;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+    .pages {
+        max-width: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 7px;
+    }
+    .pages a {
+        color: #a4a4a4; 
+        text-decoration: none;
+        }
+
+    /* main styles */
+    .main{
+        max-width: 650px;
+        background-image: url("../imgs/ba1.jpg");
+        background-size: 650px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .capa {
+        background-color: rgba(0, 0, 0, 0.4);
+        max-width: 650px;
+        /*absoluta con respecto al main que es relativo*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .main-info {
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: azure;
+        text-align: justify;
+        font-size: 0.5rem;
+    }
+
+    .botonera {
+        display: flex;
+        gap: 1rem;
+    }
+    .botonera  a {
+        text-decoration: none;
+        color: azure;
+        border: 1px solid azure;
+        border-radius: 5px;
+        padding: 0.5em;
+        font-size: 7px;
+    }
+
+    .botonera  a:hover {
+        color: #353a40;
+        background-color: azure;
+    }
+
+    #compra-ticket {
+        color: azure;
+        background-color: #2aa743;
+        border: none;
+    }
+
+    #compra-ticket:hover {
+        color: azure;
+        background-color: #33cb52;
+    }
+
+
+    .footer {
+        background: rgb(28,57,71);
+        background: linear-gradient(90deg, rgba(28,57,71,1) 0%, rgba(29,65,87,1) 35%, rgba(31,82,113,1) 100%);
+        padding: 1.5em;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
