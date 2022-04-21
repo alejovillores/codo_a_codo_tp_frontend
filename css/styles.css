@@ -329,15 +329,17 @@
         background-image: url("../imgs/ba3.jpg");
         background-position: center center;
         background-repeat: no-repeat;
-        position: relative;
-        height: 14em;
+        background-size: cover;
+        position:relative;
+        height: 20rem;
     }
     .main-info {
         color: azure;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: small;
+        justify-content: center;
+        font-size: .8rem;
         height: 100%;
         width: 100%;
         margin: 0;
@@ -353,7 +355,7 @@
         border: 1px solid azure;
         border-radius: 5px;
         padding: 0.5em;
-        font-size: 1rem;
+        font-size: smaller;
     }
 
     .botonera  a:hover {
@@ -373,13 +375,13 @@
     .card-container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         margin-top: 5px;
     }
     .oradores h3 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .card {
@@ -387,7 +389,7 @@
         grid-template-rows: 1fr auto;
         border: 0px solid rgb(158, 158, 158,0.3);
         border-radius: 4px;
-        width: 100%;
+        width: 70%;
         box-shadow: 0 0 5px #7f8182;
     }
     .card img {
@@ -395,28 +397,27 @@
         height: 90%;
         border-radius: 2px;
     }
-    .card-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .card h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-
 
     .card-text {
-        padding: 1rem;
+        padding: 0rem 1rem 1rem 1rem;
+        text-align: center;
     }
     .card-text p{
         margin-top: 0.5em;
-        font-size: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .card-tags {
+        text-align: start;
     }
 
     .tag {
         color: #ffffff;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 0.6rem;
         font-weight: bold;
         border-radius: 2px;
         padding: 2px;
@@ -444,6 +445,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         justify-content: center;
+        font-size: small;
     }
 
     .form form {
