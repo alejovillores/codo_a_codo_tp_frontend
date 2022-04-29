@@ -231,6 +231,7 @@
 
 .datos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     margin-top: 1em;
@@ -320,6 +321,24 @@
     padding: 1rem;
     display: flex;
 }
+
+/* --------- buy_tickets --------*/
+
+.tickets-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#estudios {
+    padding:.7rem;
+}
+
+.pay {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 650px){
     .container {
