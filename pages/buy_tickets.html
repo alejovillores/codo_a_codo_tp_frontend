@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="imgs/codoacodo.png" type="image/x-icon">
+    <title>Codo a Codo</title>
+</head>
+<body>
+    <div class="tickets-container">
+        <div class="nav">
+            <div class="logo">
+                <img src="../imgs/codoacodo.png" alt="logo">
+                <span> Conf Buenos Aires</span>
+            </div>
+            <div class="pages">
+                <a  href="../index.html">La conferencia</a>
+                <a href="../index.html#oradores">Los oradores</a>
+                <a  href="ubication.html">El lugar y la fecha</a>
+                <a href="../index.html#convierte">Conviérte en orador</a>
+                <a  id="tickets" href="buy_tickets.html">Comprar tickets</a>
+            </div>
+        </div>
+        <div class="form">
+            <h3 style="font-weight: lighter; font-size: 22px;">
+                Nos alegra verte por acá...
+            </h3>
+            <form action="POST">
+                <div class="datos">
+                    <input  class="focus" type="text" placeholder="Nombre" required>
+                    <input class="focus" type="text" placeholder="Apellido" required>
+                </div>
+                <div class="datos">
+                    <input  class="focus" type="email" placeholder="Direccion de correo electrónico" required>
+                </div>
+                <label style="font-size:12px; font-weight: lighter;" for="estudios">Forma de pago</label>
+                <select id="estudios" name="estudios">
+                    <option class="option_pay" value="debit">Débito</option>
+                    <option class="option_pay" value="credit">Crédito</option>
+                    <option class="option_pay" value="cash">Transferencia</option>
+                </select>
+                <div class="datos">
+                    <label style="font-size:12px; font-weight: lighter;" for="number"> Numero de tarjeta</label>
+                    <label style="font-size:12px; font-weight: lighter;" for="month"> Fecha de vencimiento</label>
+                </div>
+                <div class="pay">
+                    <input style=" width: 50%; padding: 10px;" type="number"  name="number" placeholder="Ingrese el numero..">
+                    <input style=" padding: 10px;" type="month" name="month" ">
+                </div>
+                <input style="width: 20%; padding: 10px;" type="number" name="cantidad" placeholder="Cantidad">
+                <button disabled type="submit">Comprar tickets </button>
+            </form>
+        </div>
+        <div class="footer" style="align-self: stretch;">
+            <a href="#">Preguntas Frecuentes</a>
+            
+            <a href="#">Contáctanos</a>
+            
+            <a href="#">Prensa</a>
+            
+            <a href="#">Conferencias</a>
+            
+            <a href="#">Terminos y condiciones</a>
+            
+            <a href="#">Privacidad </a>
+            
+            <a href="#">Estudiantes</a>
+
+        </div>
+    </div>
+</body>
+</html>
