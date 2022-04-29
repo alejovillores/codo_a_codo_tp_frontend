@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
 }
 
 .container {
@@ -37,11 +38,14 @@
     color: #a4a4a4; 
     text-decoration: none;
     display: flex;
+    
 }
 
 .pages a:hover {
     color: #cecece; 
 }
+
+
 
 .actual {
     color: azure !important;
