@@ -324,20 +324,6 @@
 
 /* --------- buy_tickets --------*/
 
-.tickets-container {
-    display: flex;
-    flex-direction: column;
-    font-family: 'DM Sans', sans-serif;
-}
-
-#estudios {
-    padding:.7rem;
-}
-
-.pay {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 @media only screen and (max-width: 650px){
