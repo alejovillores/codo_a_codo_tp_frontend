@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/tickets_style.css">
     <link rel="shortcut icon" href="imgs/codoacodo.png" type="image/x-icon">
     <title>Codo a Codo</title>
 </head>
@@ -24,34 +25,41 @@
             </div>
         </div>
         <div class="form">
-            <h3 style="font-weight: lighter; font-size: 22px;">
-                Nos alegra verte por acá...
+            <div class="prices_container" id="prices">
+            </div>
+            <p>VENTA</p>
+            
+            <h3 style="font-size: 2rem;" id="ticket_value">
             </h3>
-            <form action="POST">
+            <form id="dataForm" method="get">
                 <div class="datos">
-                    <input  class="focus" type="text" placeholder="Nombre" required>
-                    <input class="focus" type="text" placeholder="Apellido" required>
+                    <input  class="focus" style="width: 45%;" type="text" placeholder="Nombre" required>
+                    <input class="focus" style="width: 45%;"type="text" placeholder="Apellido" required>
                 </div>
                 <div class="datos">
-                    <input  class="focus" type="email" placeholder="Direccion de correo electrónico" required>
+                    <input  class="focus" type="email" placeholder="Correo" required>
                 </div>
-                <label style="font-size:12px; font-weight: lighter;" for="estudios">Forma de pago</label>
-                <select id="estudios" name="estudios">
-                    <option class="option_pay" value="debit">Débito</option>
-                    <option class="option_pay" value="credit">Crédito</option>
-                    <option class="option_pay" value="cash">Transferencia</option>
-                </select>
+                <div class="dato">
+                    <label for="cantidad" >Cantidad</label>
+                    <label for="categoria">Categoria</label>
+                </div>
                 <div class="datos">
-                    <label style="font-size:12px; font-weight: lighter;" for="number"> Numero de tarjeta</label>
-                    <label style="font-size:12px; font-weight: lighter;" for="month"> Fecha de vencimiento</label>
+                    <input  class="focus" name="cantidad" style="width: 45%; color: black;" id="cantidad" type="number" min="0" placeholder="Cantidad" required>
+                    <select id="descuentos" name="categoria" class="focus" style="width: 45%;" >
+                        <option class="option_pay" value="Estudiante">Estudiante</option>
+                        <option class="option_pay" value="Trainee">Trainee</option>
+                        <option class="option_pay" value="Junior">Junior</option>
+                    </select>
                 </div>
-                <div class="pay">
-                    <input style=" width: 50%; padding: 10px;" type="number"  name="number" placeholder="Ingrese el numero..">
-                    <input style=" padding: 10px;" type="month" name="month" ">
+                <div class="dato">
+                    <p id="payment">Total a pagar: </p>
                 </div>
-                <input style="width: 20%; padding: 10px;" type="number" name="cantidad" placeholder="Cantidad">
-                <button disabled type="submit">Comprar tickets </button>
+                <div class="btn">
+                    <input class="btn-pay"  type="submit" value= "Borrar" onclick="clean()"></input>
+                    <input class="btn-pay"  type="submit" value="Resumen" onclick="calculatePrice()"></input>
+                </div>
             </form>
+
         </div>
         <div class="footer" style="align-self: stretch;">
             <a href="#">Preguntas Frecuentes</a>
@@ -70,5 +78,7 @@
 
         </div>
     </div>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>

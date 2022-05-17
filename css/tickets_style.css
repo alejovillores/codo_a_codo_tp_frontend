@@ -1,0 +1,62 @@
+
+.tickets-container {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.prices_container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.price_option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border: 1.5px solid red;
+    width: 15rem;
+    height: 10rem;
+    padding: 2px 0px 2px 0px;
+}
+
+.price_option h3 {
+    margin-top: 3px;
+}
+#ticket_value {
+    padding: 1rem;
+    font-weight: 400;
+}
+
+#payment {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 2px;
+    outline: none !important;
+    border:1px solid #a8a8a8;
+    background-color: #cce5ff;
+    color: #004085;
+    text-align: start;
+    margin: 10px 0px 10px 0px;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.btn-pay{
+    border: 0px solid black;
+    border-radius: 3px;
+    padding: 0.7em;
+    background-color: rgb(150, 201, 62);
+    color: #ffffff;
+    margin-bottom: 1em;
+}
+
+.btn-pay:hover {
+    background-color: #9ad23a;   
+}
+
