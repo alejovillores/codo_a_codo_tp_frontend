@@ -20,6 +20,23 @@ for (let i = 0; i < priceOptions.length; i++) {
 const ticketValue = document.querySelector("#ticket_value")
 ticketValue.textContent = `VALOR DE TICKET $200`;
 
+function checkInfoFields() {
+    let nameField = document.querySelector("#nombre").value;
+    let secondNameField = document.querySelector("#apellido").value;
+    let emaiField = document.querySelector("#email").value;
+    let errorSpan = document.querySelector("#error");
+
+    if (nameField && secondNameField && emaiField) {
+        errorSpan.textContent = "";
+    }
+    else{
+        errorSpan.textContent = "Para comprar entradas,debe ingresar sus datos.";
+    }
+
+    
+    
+}
+
 function calculatePrice() {
     let numTickets = 0;
     let descuento = 0;
@@ -32,7 +49,7 @@ function calculatePrice() {
     descuento = Number(pricesValues[index])/100;
     let pago =  numTickets*200*descuento;
     payment.textContent = "Total a pagar:$"+String(pago);
-   
+    checkInfoFields();
 }
 
 function clean() {
@@ -41,3 +58,4 @@ function clean() {
     numField.value = 0;
     payment.textContent = "Total a pagar:";
 }
+

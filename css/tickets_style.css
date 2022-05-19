@@ -60,3 +60,17 @@
     background-color: #9ad23a;   
 }
 
+#Estudiante {
+    border: 1.5px solid rgb(6, 95, 249);
+}
+
+#Trainee {
+    border: 1.5px solid rgb(255, 244, 25);
+}
+#Junior {
+    border: 1.5px solid red;
+}
+
+.error-span{
+    color:red;
+}
